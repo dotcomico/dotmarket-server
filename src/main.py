@@ -50,7 +50,7 @@ def create_app():
     limiter = Limiter(
         key_func=get_remote_address,
         app=app,
-        default_limits=["1000 per 15 minutes"] if os.getenv('NODE_ENV') == 'development' else ["100 per 15 minutes"]
+        default_limits=[os.getenv('RATE_LIMIT') or ('1000 per 15 minutes' if os.getenv('NODE_ENV') == 'development' else '100 per 15 minutes')]
     )
 
     @app.route('/uploads/<path:filename>')
