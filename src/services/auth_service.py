@@ -6,7 +6,7 @@ from src.config.database import db
 from src.models.User import User
 from src.utils.jwt_identity import resolve_user_id
 from src.utils.logger import logger
-from src.utils.validators import required, required_string, valid_email, strong_password, one_of
+from src.utils.validators import required, required_string, valid_email, strong_password
 
 
 def validateRegister(data):
@@ -14,11 +14,6 @@ def validateRegister(data):
     errors.append(required_string(data.get('username'), 'username', min_len=3, max_len=30))
     errors.append(valid_email(data.get('email'), 'email'))
     errors.append(strong_password(data.get('password'), 'password'))
-
-    # Role (optional)
-    role = data.get('role')
-    if role:
-        errors.append(one_of(role, 'role', ROLES.values()))
 
     return [e for e in errors if e]
 
@@ -45,7 +40,6 @@ def register_user(data):
     username = data.get('username', '').strip()
     email = data.get('email', '').strip().lower()
     password = data.get('password')
-    role = data.get('role')
 
     if User.query.filter_by(email=email).first():
         return None, {'status': 400, 'message': 'User already exists with this email'}
@@ -60,7 +54,7 @@ def register_user(data):
         username=username,
         email=email,
         password=hashedPassword,
-        role=role if role else ROLES['CUSTOMER']
+        role=ROLES['CUSTOMER']
     )
     db.session.add(newUser)
     db.session.commit()
