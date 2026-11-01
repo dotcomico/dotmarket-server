@@ -1,0 +1,14 @@
+.env
+.env.*
+.git
+.gitignore
+.dockerignore
+Dockerfile
+.vscode
+venv
+logs
+instance
+**/__pycache__
+**/*.sqlite
+*.md
+test_server_creations.py
