@@ -14,7 +14,7 @@ docker run -p 3000:3000 dotcoms/supermarket-backend:latest
 ## 🚀 Quick Start (Local)
 
 ```bash
-cd backend-py
+cd backend
 python -m venv venv
 source venv/bin/activate  # Windows: .\venv\Scripts\Activate.ps1 
 pip install -r requirements.txt
@@ -106,7 +106,7 @@ There is no `DELETE /api/users/:id` — user deletion is not implemented.
 ## 📁 Project Structure
 
 ```
-backend-py/
+backend/
 ├── src/
 │   ├── config/        # Database config
 │   ├── middleware/    # Auth, errors
