@@ -1136,12 +1136,22 @@ def seed_categories():
     
     return category_map
 
+PRODUCT_DATE_SPREAD_DAYS = 30
+
 def seed_products():
-    """Create products with various stock levels."""
+    """Create products with various stock levels.
+
+    `createdAt`/`updatedAt` are set explicitly, as in `_create_order`, because
+    the storefront's "New arrivals" sorts on `createdAt` and a shared seed-run
+    timestamp would make that order meaningless. Earlier list entries are newer.
+    """
     print("\n📦 Creating products...")
     product_list = []
-    
-    for prod_data in PRODUCTS:
+    seeded_at = datetime.now(timezone.utc).replace(tzinfo=None)
+    days_between_products = PRODUCT_DATE_SPREAD_DAYS / len(PRODUCTS)
+
+    for index, prod_data in enumerate(PRODUCTS):
+        added_at = seeded_at - timedelta(days=index * days_between_products)
         product = Product(
             name=prod_data["name"],
             description=prod_data["description"],
@@ -1149,7 +1159,9 @@ def seed_products():
             stock=prod_data["stock"],
             categoryId=prod_data["categoryId"],
             image=prod_data.get("image"),
-            image360=prod_data.get("image360")
+            image360=prod_data.get("image360"),
+            createdAt=added_at,
+            updatedAt=added_at
         )
         db.session.add(product)
         db.session.flush()
