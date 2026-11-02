@@ -41,12 +41,14 @@ python -m src.main
 - **12 Parent Categories**: Fruits & Veg, Meat, Fish, Dairy, Bakery, Pantry, Snacks, Beverages, Frozen, Household, Personal Care, Electronics
 - **48 Subcategories**: Organized under parents with proper hierarchy
 
-### Products (62 total)
-- **20 products from your old database** (with existing images)
-- **42 new products** (no images - will use placeholders)
+### Products (108 total)
+- **50 products with images**
+- **58 products without images** (will use placeholders)
+- Every subcategory has at least one product
+- Add new products at the end of `PRODUCTS`: seeded orders reference products by list index
 - Various stock levels for dashboard testing:
-  - Low stock (≤5 units): 6 products
-  - Out of stock (0 units): 1 product
+  - Low stock (≤5 units): 4 products
+  - Out of stock (0 units): 2 products
 
 ### Orders (5 total)
 All orders belong to the Customer test user:
