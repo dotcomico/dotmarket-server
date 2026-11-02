@@ -185,3 +185,7 @@ $env:PYTHONIOENCODING="utf-8"
 | [`dotmarket-client`](https://github.com/dotcomico/dotmarket-client) | Storefront and admin UI |
 | [`dotmarket-mcp-server`](https://github.com/dotcomico/dotmarket-mcp-server) | Exposes this API as tools for AI models |
 | [`dotmarket-ai-server`](https://github.com/dotcomico/dotmarket-ai-server) | Chat assistant |
+
+## 📄 License
+
+[MIT](LICENSE)
