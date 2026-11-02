@@ -970,6 +970,244 @@ PRODUCTS = [
         "image": "/uploads/1770126971967.png",
         "image360": "/uploads/1770126971969.gif"
     },
+
+    # === PREVIOUSLY EMPTY SUBCATEGORIES (No images - system will use placeholders) ===
+    # Keep new products below this line: seed_orders() references products by
+    # list index, so inserting earlier would change what the seeded orders contain.
+
+    # Organic Produce (16)
+    {
+        "name": "Organic Baby Spinach (5oz)",
+        "description": "Tender, triple-washed organic baby spinach. Ready for salads, smoothies, or a quick sauté.",
+        "price": 3.99,
+        "stock": 70,
+        "categoryId": 16,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Organic Hass Avocados (4-pack)",
+        "description": "Creamy, certified organic Hass avocados. Perfect for guacamole, toast, or salads.",
+        "price": 6.99,
+        "stock": 60,
+        "categoryId": 16,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Organic Cherry Tomatoes (1 Pint)",
+        "description": "Sweet, vine-ripened organic cherry tomatoes. Great for snacking or roasting.",
+        "price": 4.49,
+        "stock": 65,
+        "categoryId": 16,
+        "image": None,
+        "image360": None
+    },
+
+    # Pork (19)
+    {
+        "name": "Boneless Pork Loin Chops (2-pack)",
+        "description": "Thick-cut boneless pork loin chops. Lean, juicy, and ideal for grilling or pan-frying.",
+        "price": 10.99,
+        "stock": 35,
+        "categoryId": 19,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Applewood Smoked Bacon (12oz)",
+        "description": "Thick-sliced bacon slow-smoked over applewood for a rich, savory flavor.",
+        "price": 7.99,
+        "stock": 60,
+        "categoryId": 19,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Pork Breakfast Sausages (1lb)",
+        "description": "Juicy pork sausage links seasoned with sage and black pepper.",
+        "price": 6.49,
+        "stock": 45,
+        "categoryId": 19,
+        "image": None,
+        "image360": None
+    },
+
+    # Lamb (20)
+    {
+        "name": "Frenched Rack of Lamb",
+        "description": "Tender, hand-trimmed rack of lamb with a mild, rich flavor. An elegant centerpiece for roasting.",
+        "price": 29.99,
+        "stock": 12,
+        "categoryId": 20,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Ground Lamb (1lb)",
+        "description": "Freshly ground lamb, perfect for kofta, burgers, and meatballs.",
+        "price": 11.99,
+        "stock": 30,
+        "categoryId": 20,
+        "image": None,
+        "image360": None
+    },
+
+    # Smoked & Cured (23)
+    {
+        "name": "Cold-Smoked Salmon Slices (4oz)",
+        "description": "Silky, oak-smoked salmon, thinly sliced and ready to serve on bagels or blinis.",
+        "price": 9.99,
+        "stock": 40,
+        "categoryId": 23,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Peppered Smoked Mackerel Fillets",
+        "description": "Hot-smoked mackerel fillets with a cracked black pepper crust. Rich in Omega-3.",
+        "price": 7.49,
+        "stock": 30,
+        "categoryId": 23,
+        "image": None,
+        "image360": None
+    },
+
+    # Butter & Margarine (28)
+    {
+        "name": "Salted Butter Sticks (1lb)",
+        "description": "Classic sweet cream salted butter, divided into four easy-to-measure sticks.",
+        "price": 5.49,
+        "stock": 110,
+        "categoryId": 28,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Unsalted Cultured Butter (8oz)",
+        "description": "Slow-churned European-style butter with a rich, tangy flavor. A favorite for baking.",
+        "price": 4.99,
+        "stock": 70,
+        "categoryId": 28,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Plant-Based Margarine Spread",
+        "description": "Smooth, dairy-free spread made with sunflower oil. Spreads straight from the fridge.",
+        "price": 3.99,
+        "stock": 85,
+        "categoryId": 28,
+        "image": None,
+        "image360": None
+    },
+
+    # Cookies & Biscuits (31)
+    {
+        "name": "Classic Chocolate Chip Cookies",
+        "description": "Soft-baked cookies loaded with semi-sweet chocolate chips.",
+        "price": 4.49,
+        "stock": 90,
+        "categoryId": 31,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Scottish Butter Shortbread",
+        "description": "Crumbly, golden shortbread biscuits made with real butter. Lovely with tea or coffee.",
+        "price": 5.49,
+        "stock": 60,
+        "categoryId": 31,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Oatmeal Raisin Cookies",
+        "description": "Chewy whole-oat cookies with plump raisins and a hint of cinnamon.",
+        "price": 4.29,
+        "stock": 75,
+        "categoryId": 31,
+        "image": None,
+        "image360": None
+    },
+
+    # Spices & Seasonings (36)
+    {
+        "name": "Himalayan Pink Salt Grinder",
+        "description": "Coarse mineral-rich pink salt in a refillable grinder.",
+        "price": 4.99,
+        "stock": 100,
+        "categoryId": 36,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Spanish Smoked Paprika",
+        "description": "Deep red paprika with a sweet, smoky aroma. Adds warmth to stews, rubs, and roasted vegetables.",
+        "price": 3.99,
+        "stock": 80,
+        "categoryId": 36,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Italian Herb Seasoning",
+        "description": "A fragrant blend of oregano, basil, thyme, and rosemary for sauces and marinades.",
+        "price": 3.49,
+        "stock": 90,
+        "categoryId": 36,
+        "image": None,
+        "image360": None
+    },
+
+    # Frozen Meals (48)
+    {
+        "name": "Chicken Tikka Masala with Basmati Rice",
+        "description": "Tender chicken in a creamy spiced tomato sauce, served with fluffy basmati rice. Ready in minutes.",
+        "price": 6.99,
+        "stock": 55,
+        "categoryId": 48,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Beef Lasagna (Family Size)",
+        "description": "Layers of pasta, slow-cooked beef ragù, and melted cheese. Serves four.",
+        "price": 11.99,
+        "stock": 40,
+        "categoryId": 48,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Vegetable Stir-Fry Noodle Bowl",
+        "description": "Egg noodles with crisp vegetables in a sweet soy and ginger sauce.",
+        "price": 5.49,
+        "stock": 50,
+        "categoryId": 48,
+        "image": None,
+        "image360": None
+    },
+
+    # Frozen Desserts (50)
+    {
+        "name": "Alphonso Mango Sorbet (1 Pint)",
+        "description": "Dairy-free sorbet made with ripe Alphonso mangoes. Bright, smooth, and refreshing.",
+        "price": 5.99,
+        "stock": 40,
+        "categoryId": 50,
+        "image": None,
+        "image360": None
+    },
+    {
+        "name": "Chocolate Lava Cakes (4-pack)",
+        "description": "Individual chocolate cakes with a molten center. Bake from frozen and serve warm.",
+        "price": 8.99,
+        "stock": 30,
+        "categoryId": 50,
+        "image": None,
+        "image360": None
+    },
 ]
 
 # =============================================================================
